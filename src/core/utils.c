@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/header.h"
+#include "../../include/header.h"
 
 int	is_digit(char c)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/header.h"
+#include "../../include/header.h"
 
 t_data	*data(void)
 {
