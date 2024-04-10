@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/header.h"
+#include "../include/header.h"
 
 int check_digits(int ac, char **av, int i)
 {

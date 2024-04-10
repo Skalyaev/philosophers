@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/header.h"
+#include "../include/header.h"
 
 t_data *data(void)
 {
@@ -84,7 +84,7 @@ int main(int ac, char **av)
     }
     else
     {
-        puts("Usage: ./philo nbr_of_philo time_to_die time_to_eat time_to_sleep [nbr_of_times_each_philo_must_eat]");
+        puts("Usage: ./philo <count> <ttd> <tte> <tts> [ttw]");
         return (0);
     }
     return (0);
