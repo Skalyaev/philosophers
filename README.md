@@ -1,21 +1,23 @@
-# Philosophers
+# <p align="center">philosophers</p>
 > *Dans ce projet, vous apprendrez les bases du multithreading d'un processus. Vous verrez comment créer des threads et découvrirez les mutex.*
+>
+> - *Un ou plusieurs philosophes sont assis autour d'une table ronde avec un grand bol de spaghetti au milieu.*
+> - *Les philosophes alternent entre manger, réfléchir et dormir. Pendant qu'ils mangent, ils ne pensent ni ne dorment ; pendant qu'ils réfléchissent, ils ne mangent ni ne dorment ; et bien sûr, pendant qu'ils dorment, ils ne mangent ni ne réfléchissent.*
+> - *Il y a aussi des fourchettes sur la table, autant de fourchettes que de philosophes.*
+> - *Comme manger et servir des spaghetti avec une seule fourchette est très inconfortable, un philosophe prend ses fourchettes droite et gauche pour manger, une dans chaque main.*
+> - *Quand un philosophe a fini de manger, il remet ses fourchettes sur la table et commence à dormir. Une fois réveillé, il recommence à réfléchir. La simulation s'arrête quand un philosophe meurt de faim.*
+> - *Chaque philosophe a besoin de manger et ne doit jamais mourir de faim.*
+> - *Les philosophes ne se parlent pas entre eux.*
+> - *Les philosophes ne savent pas si un autre philosophe est sur le point de mourir.*
+> - *Inutile de dire que les philosophes doivent éviter de mourir !*
 
-- Un ou plusieurs philosophes sont assis autour d'une table ronde avec un grand bol de spaghetti au milieu.
-- Les philosophes alternent entre manger, réfléchir et dormir. Pendant qu'ils mangent, ils ne pensent ni ne dorment ; pendant qu'ils réfléchissent, ils ne mangent ni ne dorment ; et bien sûr, pendant qu'ils dorment, ils ne mangent ni ne réfléchissent.
-- Il y a aussi des fourchettes sur la table, autant de fourchettes que de philosophes.
-- Comme manger et servir des spaghetti avec une seule fourchette est très inconfortable, un philosophe prend ses fourchettes droite et gauche pour manger, une dans chaque main.
-- Quand un philosophe a fini de manger, il remet ses fourchettes sur la table et commence à dormir. Une fois réveillé, il recommence à réfléchir. La simulation s'arrête quand un philosophe meurt de faim.
-- Chaque philosophe a besoin de manger et ne doit jamais mourir de faim.
-Les philosophes ne se parlent pas entre eux.
-- Les philosophes ne savent pas si un autre philosophe est sur le point de mourir.
-- Inutile de dire que les philosophes doivent éviter de mourir !
-
-## Preview
+## Aperçu
 ```bash
 philo 3 610 200 200 3 | sed 's= ms=='
 ```
 <details><summary>output</summary>
+  
+```c
 0 1 is thinking
 0 2 is thinking
 0 3 is thinking
@@ -63,12 +65,13 @@ philo 3 610 200 200 3 | sed 's= ms=='
 1614 2 is eating
 1812 3 is thinking
 1814 2 is sleeping
+```
 </details>
 
 ![](https://github.com/Skalyaeve/images-1/blob/main/screenshot/philo.png)
 > Visualieur [ici](https://nafuka11.github.io/philosophers-visualizer/)
 
-## Install
+## Installer
 ```bash
 sudo apt update -y
 sudo apt install -y gcc
@@ -91,18 +94,18 @@ ln -s $PWD/src $HOME/.local/src/$name
 ln -s $PWD/include $HOME/.local/include/$name
 ```
 
-## Usage
+## Utiliser
 ```bash
 export PATH=$HOME/.local/bin:$PATH
 philo <count> <ttd> <tte> <tts> [ttw]
 ```
-- `<count>` - Nombre de philosophes
-- `<ttd>` - Temps avant la mort (ms)
-- `<tte>` - Temps pour manger (ms)
-- `<tts>` - Temps pour dormir (ms)
-- `[ttw]` - Nombre de repas à manger
+- **`<count>`** - Nombre de philosophes
+- **`<ttd>`** - Temps avant la mort (ms)
+- **`<tte>`** - Temps pour manger (ms)
+- **`<tts>`** - Temps pour dormir (ms)
+- **`[ttw]`** - Nombre de repas à manger
 
-## Uninstall
+## Désinstaller
 ```bash
 name=philo
 
