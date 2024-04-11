@@ -65,7 +65,7 @@ philo 3 610 200 200 3 | sed 's= ms=='
 1814 2 is sleeping
 </details>
 
-![](https://github.com/Skalyaeve/images/blob/main/screenshot/philo.png)
+![](https://github.com/Skalyaeve/images-1/blob/main/screenshot/philo.png)
 > Visualieur [ici](https://nafuka11.github.io/philosophers-visualizer/)
 
 ## Install
