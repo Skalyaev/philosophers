@@ -11,12 +11,12 @@
 > - *Les philosophes ne savent pas si un autre philosophe est sur le point de mourir.*
 > - *Inutile de dire que les philosophes doivent éviter de mourir !*
 
-## Aperçu
+## Preview
 ```bash
 philo 3 610 200 200 3 | sed 's= ms=='
 ```
 <details><summary>output</summary>
-  
+
 ```c
 0 1 is thinking
 0 2 is thinking
@@ -71,7 +71,7 @@ philo 3 610 200 200 3 | sed 's= ms=='
 ![](https://github.com/Skalyaeve/images-1/blob/main/screenshot/philo.png)
 > Visualieur [ici](https://nafuka11.github.io/philosophers-visualizer/)
 
-## Installer
+## Install
 ```bash
 sudo apt update -y
 sudo apt install -y gcc
@@ -87,14 +87,14 @@ link=Skalyaeve/philosophers
 name=philo
 
 git clone https://github.com/$link.git $name
-cd .. && make && make clean
+cd $name && make && make clean
 
 ln -s $PWD/$name $HOME/.local/bin/$name
 ln -s $PWD/src $HOME/.local/src/$name
 ln -s $PWD/include $HOME/.local/include/$name
 ```
 
-## Utiliser
+## Usage
 ```bash
 export PATH=$HOME/.local/bin:$PATH
 philo <count> <ttd> <tte> <tts> [ttw]
@@ -105,12 +105,13 @@ philo <count> <ttd> <tte> <tts> [ttw]
 - **`<tts>`** - Temps pour dormir (ms)
 - **`[ttw]`** - Nombre de repas à manger
 
-## Désinstaller
+## Uninstall
 ```bash
 name=philo
 
-rm -r $name
+rm -rf $name
 rm $HOME/.local/bin/$name
 rm $HOME/.local/src/$name
 rm $HOME/.local/include/$name
 ```
+
