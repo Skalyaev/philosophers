@@ -83,10 +83,9 @@ mkdir -p $HOME/.local/src
 mkdir -p $HOME/.local/include
 ```
 ```bash
-link=Skalyaeve/philosophers
 name=philo
 
-git clone https://github.com/$link.git $name
+git clone https://github.com/Skalyaeve/philosophers.git $name
 cd $name && make && make clean
 
 ln -s $PWD/$name $HOME/.local/bin/$name
